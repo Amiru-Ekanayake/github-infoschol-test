@@ -1,0 +1,24 @@
+:root{
+  --bg:#f7fbff;
+  --card:#fff;
+  --accent:#4b6cff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#111}
+.container{max-width:980px;margin:0 auto;padding:24px}
+.site-header{background:linear-gradient(90deg,#fff 0,#f3f6ff);border-bottom:1px solid #e6eefb}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{margin:0;font-size:20px;color:var(--accent)}
+.nav a{margin-left:16px;color:var(--muted);text-decoration:none}
+.hero{padding:48px 0;background:linear-gradient(180deg,rgba(75,108,255,0.06),transparent)}
+.hero h2{margin:0 0 8px;font-size:28px}
+.hero p{margin:0 0 16px;color:var(--muted)}
+.btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.btn.secondary{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.section{background:transparent;padding:18px 24px;margin:12px 0;border-radius:10px}
+.team-grid{display:flex;gap:16px;flex-wrap:wrap}
+.member{background:var(--card);padding:12px;border-radius:8px;flex:1 1 180px;box-shadow:0 4px 10px rgba(50,60,80,0.06)}
+.avatar{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7aa0ff);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:8px}
+.site-footer{padding:20px 0;text-align:center;color:var(--muted);font-size:13px}
+@media(max-width:640px){.site-header .container{flex-direction:column;gap:12px}.nav a{margin-left:8px}}
